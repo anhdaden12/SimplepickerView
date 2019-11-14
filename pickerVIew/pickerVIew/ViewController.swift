@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
        //coutnry picker
-         countryPicker = UIPickerView()
+        countryPicker = UIPickerView()
         countryPicker.tag = 1
         countryPicker.delegate = self
         countryPicker.dataSource = self
