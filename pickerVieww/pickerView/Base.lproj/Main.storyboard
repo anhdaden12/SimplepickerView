@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fH-bH-5xH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0BD-Rp-BeL">
+            <objects>
+                <viewController id="0fH-bH-5xH" customClass="ViewController" customModule="pickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZb-zW-VeE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjp-W0-gtt">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                                <color key="backgroundColor" red="0.73189526800000004" green="0.444234401" blue="0.33098566530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47f-V4-bQe">
+                                <rect key="frame" x="0.0" y="433" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zsk-K8-PBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kjp-W0-gtt" firstAttribute="leading" secondItem="3mn-Qz-orK" secondAttribute="leading" id="7y1-LG-2ti"/>
+                            <constraint firstItem="Kjp-W0-gtt" firstAttribute="centerX" secondItem="vZb-zW-VeE" secondAttribute="centerX" id="C20-J0-Stj"/>
+                            <constraint firstItem="3mn-Qz-orK" firstAttribute="trailing" secondItem="Kjp-W0-gtt" secondAttribute="trailing" id="F5g-fh-6Wu"/>
+                            <constraint firstItem="3mn-Qz-orK" firstAttribute="bottom" secondItem="Kjp-W0-gtt" secondAttribute="bottom" id="H1V-lJ-DMQ"/>
+                            <constraint firstItem="47f-V4-bQe" firstAttribute="centerY" secondItem="vZb-zW-VeE" secondAttribute="centerY" id="WPD-YD-zdY"/>
+                            <constraint firstItem="47f-V4-bQe" firstAttribute="leading" secondItem="3mn-Qz-orK" secondAttribute="leading" id="riv-ic-21m"/>
+                            <constraint firstItem="47f-V4-bQe" firstAttribute="centerX" secondItem="vZb-zW-VeE" secondAttribute="centerX" id="yp7-AG-8i3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3mn-Qz-orK"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="47f-V4-bQe" id="ul1-Vv-7mA"/>
+                        <outlet property="pickerVIew" destination="Kjp-W0-gtt" id="73x-yQ-IIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDP-NE-bUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="178.79464285714286"/>
+        </scene>
+    </scenes>
+</document>
